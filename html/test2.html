@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+var sell4 = prompt("판매량은 얼마입니까?");
+var sell1 = 1200;
+var sell2 = 1300;
+var sell3 = 1000;
+var avg = (sell1 + sell2 + sell3)/3;
+
+if(sell4>avg){
+    document.write("판매량이 평균이상이어요");
+}else if(sell4<avg){
+    document.write("판매량이 이정도라니 케지메 안건인거시에요");
+}
+document.getElementById("sell4").innerHTML=sell4;
+
+</script>
+    <table border="1"> 
+<td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+<th>판매량</th>
+<tr>
+    <td>1분기</td>
+    <td>1200</td>
+</tr>
+<tr>
+    <td>2분기</td>
+    <td>1300</td>
+</tr>
+<tr>
+    <td>3분기</td>
+    <td>1000</td>
+</tr>
+<tr>
+    <td>4분기</td>
+    <td id="sell4"></td>
+</tr>
+    </table>
+
+</body>
+</html>

@@ -8,12 +8,13 @@
 </head>
 <body>
     <script>
-        var userName = prompt("당신의 이름은??")
-if(userName == ""){
-    document.write("네놈에게 알려줄 이름따위가 있을까?");
-}else{
-    document.write("도모-처음뵙겠습니다." + userName + "입니다");
-}
+        var i =1;
+        while(i<=30){
+            if(i%2==0 && i%6==0){
+                document.write(i,"<br>");
+            }
+            i++;
+        }
     </script>
 </body>
-</html> 
+</html>

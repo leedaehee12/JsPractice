@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    document.write("가위바위보<br>");
+    var game = prompt("가위 바위 보 중에 하나를 고르세여");
+    switch(game){
+        case "가위" :
+        gameNum = 1; break;
+        case "바위":
+        gameNum = 2; break;
+        case "보":
+        gameNum = 3; break;
+
+        default : alert("가위바위보 중에 하나를 쓰세요");
+        location.reload();
+    }
+
+
+    result = function(){
+        document.write("당신이 낸 것 : " + gameNum + "<br>");
+        document.write("컴퓨터가 낸 것 :"+ com + "<br>");
+    }
+
+    var com = Math.ceil(Math.random()*3);
+    if(gameNum == com){
+        result();
+        document.write("비겼습니다");
+    }else if(gameNum == 1 && com ==3){
+        result();
+        document.write("이겼습니다");
+    }else if(gameNum == 1 && com == 2){
+        result();
+        document.write("졌습니다");
+    }else if(gameNum == 2 && com == 3){
+        result();
+        document.write("졌습니다")
+    }else if(gameNum == 3 && com == 2){
+        result();
+        document.write("이겼습니다");
+    }else if(gameNum ==2 && com == 1){
+        result();
+        document.write("이겼습니다");
+    }else if(gameNum == 3 && com == 1){
+        result();
+        document.write("졌습니다");
+    }
+
+    
+</script>
+</body>
+</html>
